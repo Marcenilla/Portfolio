@@ -3,14 +3,15 @@
 
     <section class=" mx-auto px-10 md:px-56">
 
-        <div class="text-center flex flex-col justify-center items-center font-playfair-display font-bold uppercase">
-            <div class="me-40 md:me-[50vw]">
+        <div class="flex flex-col justify-center font-playfair-display font-bold uppercase">
+            <div class="flex flex-row justify-center me-[10rem] md:me-[50rem]">
             <p class="font-medium font-archivo text-sm md:text-2xl">HEY! I'm <span class="text-neutral-100 bg-[#C50000] px-1 ms-1">MITCH.</span></p>
             </div>
-
-            <h1 class="text-[2rem] md:text-[6rem] text-[#1b1b1b] ">Full Stack</h1>
-            <div class="w-56 md:w-[55rem] h-0.5 bg-neutral-900 mx-auto"></div>
-            <h1 class="text-[2rem] md:text-[6rem] text-[#ED1B24] ">Web Developer</h1>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-[2rem] md:text-[6rem] text-[#1b1b1b] ">Full Stack</h1>
+                <div class="w-56 md:w-[55rem] h-0.5 bg-neutral-900 mx-auto"></div>
+                <h1 class="text-[2rem] md:text-[6rem] text-[#ED1B24] ">Web Developer</h1>
+            </div>
         </div>
         <div class="text-center">
         <h2 class="text-md md:text-2xl text-neutral-500 font-karla">From Bacolod City, Philippines</h2>
