@@ -6,7 +6,7 @@
                 <button type="button" @click="toggleSideNav"
                     class="relative w-10 h-10 flex items-center justify-center">
                     <transition name="icon-fade" mode="out-in">
-                        <i v-if="mobileNav" key="bars-staggered" class="fa-solid fa-bars-staggered"></i>
+                        <i v-if="mobileNav" key="xmark" class="fa-solid fa-xmark"></i>
                         <i v-else key="bars" class="fa-solid fa-bars"></i>
                     </transition>
                 </button>
@@ -15,7 +15,7 @@
             <!-- Sidebar with transition -->
             <transition name="slide">
                 <div v-if="mobileNav"
-                    class="fixed flex justify-start h-screen z-81 top-0 transition ease-in-out duration-150 w-screen pt-5 right-0 bg-white/30 backdrop-blur-2xl overflow-x-hidden shadow-lg">
+                    class="fixed flex justify-start h-screen z-81 top-0 transition ease-in-out duration-150 w-screen pt-5 right-0 bg-neutral-300  overflow-x-hidden shadow-lg">
                     <ul class="flex flex-col gap-10 font-archivo font-medium mt-20 mx-auto">
                         <li><a href="#" class="hover-slider">Home</a></li>
                         <li><a href="#about" class="hover-slider">About Me</a></li>
