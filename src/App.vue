@@ -2,6 +2,7 @@
 import Navbar from '@/components/Navbar.vue';
 import SideNav from '@/components/SideNav.vue';
 import TheFooter from '@/components/TheFooter.vue';
+import LoadingAnimation from '@/components/LoadingAnimation.vue';
 import Index from '@/pages/Index.vue';
 </script>
 
@@ -12,6 +13,10 @@ import Index from '@/pages/Index.vue';
     </div>
     <div class="block md:hidden">
       <SideNav />
+    </div>
+
+    <div>
+      <LoadingAnimation />
     </div>
     <section class="pt-40 ">
       <Index />
