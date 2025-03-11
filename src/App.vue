@@ -1,11 +1,17 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
-import Index from '@/pages/Index.vue'
+import SideNav from '@/components/SideNav.vue';
+import Index from '@/pages/Index.vue';
 </script>
 
 <template >
   <main>
-    <Navbar />
+   <div class="hidden md:block" >
+     <Navbar />
+    </div>
+    <div class="block md:hidden">
+      <SideNav/>
+    </div>
     <section  class="pt-56">
       <Index />
     </section>
