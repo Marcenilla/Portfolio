@@ -122,7 +122,7 @@
         <!--  -->
 
         <!-- project -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-20 mb-40">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-20">
             <!-- images alternate "placement" for column and row layout-->
             <img class="w-40 md:w-96 md:hidden block"
                 src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/441283863_122143332830203750_7425556550832358537_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHMSMz1-SVudV2wpy0IQ_kK1y_dU9UUqZzXL91T1RSpnLmBg7cVvid7Pv-vd0xG8sPcHc7E__U6eGQCIaKUXOgr&_nc_ohc=9_fLojN8-ZgQ7kNvgGxYAJ_&_nc_oc=AdjZE8BJgrgpKW0_BSwmEojRMU8P464DgFvT9pP5hWJt57qqSAdvW0GlKluXsa-mne8&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=A579mM4OLykO0LYGKHwML9c&oh=00_AYETcFBZP_8xp65qO8y6gZycYnGXkz0n7D0SmppDzmlW5A&oe=67D58261"
@@ -148,35 +148,42 @@
     </section>
 
     <!-- contact me -->
-    <section id="contact" class="pt-40">
+    <section id="contact" class="py-40">
         <div class="flex flex-col items-center justify-center me-40 md:me-[50rem] mb-20 md:mb-40">
-            <h1 class="text-2xl md:text-[4rem] font-bold font-archivo uppercase">contact me</h1>
+            <h1 class=" text-2xl md:text-[4rem] font-bold font-archivo uppercase">contact me</h1>
             <div class="h-0.5 md:h-1 w-32 md:w-96 bg-[#ED1B24]"></div>
+            <div class="flex flex-row gap-5">
+                <p>+</p>
+                <p>+</p>
+                <p>+</p>
+            </div>
         </div>
 
-
-        <div
-            class="flex flex-col md:flex-row gap-10 md:gap-20 mx-10 md:mx-auto items-start md:justify-center md:items-center">
+        <div class=" flex flex-col md:flex-row gap-10 md:gap-20 mx-10 md:mx-auto items-start md:justify-center
+            md:items-center ">
             <div class="flex flex-col">
                 <a id="email" href="mailto:mitchbarcenilla4@gmail.com"
-                    class="ms-5 hover:text-[#ED1B24] transition duration-150">mitchbarcenilla4@gmail.com</a>
-                <div class="h-[1px] md:h-0.5 w-72 bg-neutral-800"></div>
+                    class="ms-5 hover:text-[#ED1B24] transition duration-150"><i class="fa-regular fa-envelope"></i>
+                    mitchbarcenilla4@gmail.com</a>
             </div>
             <div class="flex flex-col">
                 <a href="https://www.facebook.com/0100.010O/"
-                    class="ms-5 hover:text-[#ED1B24] transition duration-150">Facebook.</a>
-                <div class="h-[1px] md:h-0.5 w-40 bg-neutral-800"></div>
+                    class="ms-5 hover:text-[#ED1B24] transition duration-150"><i
+                        class="fa-brands fa-square-facebook"></i> Mitch Barcenilla</a>
             </div>
             <div class="flex flex-col">
                 <a href="https://www.instagram.com/imytchyou/"
-                    class="ms-5 hover:text-[#ED1B24] transition duration-150">Instagram.</a>
-                <div class="h-[1px] md:h-0.5 w-40 bg-neutral-800"></div>
+                    class="ms-5 hover:text-[#ED1B24] transition duration-150"><i class="fa-brands fa-instagram"></i>
+                    imytchyou</a>
             </div>
             <div class="flex flex-col">
-                <a href="https://github.com/Mitchap"
-                    class="ms-5 hover:text-[#ED1B24] transition duration-150">GitHub.</a>
-                <div class="h-[1px] md:h-0.5 w-40 bg-neutral-800"></div>
+                <a href="https://github.com/Mitchap" class="ms-5 hover:text-[#ED1B24] transition duration-150"><i
+                        class="fa-brands fa-square-github"></i> Mitchap</a>
             </div>
+        </div>
+
+        <div class="flex flex-col relative border-1 border-neutral-400 w-52 h-52 mx-auto -mt-20 -z-20">
+            <div class="absolute border-1 border-neutral-400 w-52 h-52 bottom-[20px] left-[20px]"></div>
         </div>
     </section>
 

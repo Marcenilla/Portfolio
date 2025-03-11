@@ -1,23 +1,23 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
 import SideNav from '@/components/SideNav.vue';
+import TheFooter from '@/components/TheFooter.vue';
 import Index from '@/pages/Index.vue';
 </script>
 
-<template >
+<template>
   <main>
-   <div class="hidden md:block" >
-     <Navbar />
+    <div class="hidden md:block">
+      <Navbar />
     </div>
     <div class="block md:hidden">
-      <SideNav/>
+      <SideNav />
     </div>
-    <section  class="pt-56">
+    <section class="pt-40 ">
       <Index />
     </section>
   </main>
+  <TheFooter />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
