@@ -1,20 +1,29 @@
 <template data-v-app>
     <!-- hero section  -->
 
-    <section class=" mx-auto px-10 md:px-56">
+    <section 
+
+                v-motion :initial="{ opacity: 0, x: -100 }" 
+    :enter="{ opacity: 1, x: 0, transition: { delay: 1000, duration: 1000 } }"
+    class=" mx-auto px-10 md:px-56">
 
         <div class="flex flex-col justify-center font-playfair-display font-bold uppercase">
-            <div class="flex flex-row justify-center me-[10rem] md:me-[50rem]">
+            <div 
+            class="flex flex-row justify-center me-[10rem] md:me-[50rem]">
                 <p class="font-medium font-archivo text-sm md:text-2xl">HEY! I'm <span
                         class="text-neutral-100 bg-[#C50000] px-1 ms-1">MITCH.</span></p>
             </div>
-            <div class="flex flex-col justify-center items-center">
+            <div 
+
+            
+            class="flex flex-col justify-center items-center">
                 <h1 class="text-[2rem] md:text-[6rem] text-[#1b1b1b] ">Full Stack</h1>
                 <div class="w-56 md:w-[55rem] h-0.5 bg-neutral-900 mx-auto"></div>
                 <h1 class="text-[2rem] md:text-[6rem] text-[#ED1B24] ">Web Developer</h1>
             </div>
         </div>
-        <div class="text-center">
+        <div 
+        class="text-center">
             <h2 class="text-md md:text-2xl text-neutral-500 font-karla">From Bacolod City, Philippines</h2>
             <div class="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
                 <p class="font-archivo md:font-bold uppercase text-[12px] md:text-lg ">Learn more about me</p>
@@ -27,7 +36,8 @@
     </section>
 
     <!-- about me -->
-    <div>
+    <div v-motion :initial="{ opacity: 0, y: 50 }" 
+    :enter="{ opacity: 1, y: 0, transition: { delay: 1500, duration: 500 } }">
         <div class="flex flex-col justify-center text-center mt-20 md:mt-40">
             <i class="fa-solid fa-xmark text-[#ED1B24]"></i>
             <div class="h-10 md:h-20 w-0.5 bg-neutral-900 mx-auto mt-4 rounded"></div>
@@ -37,7 +47,10 @@
 
     <section id="about" class="flex justify-center pt-20 md:pt-40">
 
-        <div class="flex flex-col md:flex-row ">
+        <div class="flex flex-col md:flex-row"
+         v-motion-slide-visible-once-left 
+    :variants="customVariants"
+        >
 
             <div class="flex flex-col font-archivo  z-12 md:me-[-150px]">
                 <h1 class="text-2xl md:text-[4rem] text-neutral-800 font-medium">ABOUT ME:</h1>
@@ -182,15 +195,30 @@
             </div>
         </div>
 
-        <div class="flex flex-col relative border-1 border-neutral-400 w-52 h-52 mx-auto -mt-20 -z-20">
-            <div class="absolute border-1 border-neutral-400 w-52 h-52 bottom-[20px] left-[20px]"></div>
+        <div class="flex flex-col relative border-1 border-neutral-400 w-20 h-20 md:w-52  md:h-52 mx-auto -mt-20 -z-20">
+            <div class="absolute border-1 border-neutral-400 w-20 h-20 md:w-52  md:h-52 bottom-[20px] left-[20px]"></div>
         </div>
     </section>
 
 </template>
 
 <script>
+import { MotionDirective as motion } from '@vueuse/motion'
 
+export default {
+  directives: {
+    motion: motion(),
+  },
+}
+const customVariants = {
+  visibleOnce: {
+    enter: {
+      transition: {
+        duration: 2000, // 2 seconds
+      },
+    },
+  },
+};
 
 </script>
 

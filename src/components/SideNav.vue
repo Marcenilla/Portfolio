@@ -17,10 +17,10 @@
                 <div v-if="mobileNav"
                     class="fixed flex justify-start h-screen z-81 top-0 transition ease-in-out duration-150 w-screen pt-5 right-0 bg-neutral-300  overflow-x-hidden shadow-lg">
                     <ul class="flex flex-col gap-10 font-archivo font-medium mt-20 mx-auto">
-                        <li><a href="#" class="hover-slider">Home</a></li>
-                        <li><a href="#about" class="hover-slider">About Me</a></li>
-                        <li><a href="#experience" class="hover-slider">Experience</a></li>
-                        <li><a href="#contact" class="hover-slider">Contact</a></li>
+                        <li><a @click="toggleSideNav" href="#" class="hover-slider">Home</a></li>
+                        <li><a @click="toggleSideNav" href="#about" class="hover-slider">About Me</a></li>
+                        <li><a @click="toggleSideNav" href="#experience" class="hover-slider">Experience</a></li>
+                        <li><a @click="toggleSideNav" href="#contact" class="hover-slider">Contact</a></li>
                         <li>
                             <a href="#" class="hover-slider">Resume
                                 <i class="fa-solid fa-arrow-up-right-from-square text-sm ms-1"></i></a>
@@ -46,6 +46,7 @@ export default {
         toggleSideNav() {
             this.mobileNav = !this.mobileNav;
         },
+
     },
 };
 </script>
