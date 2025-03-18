@@ -180,7 +180,7 @@
                     mitchbarcenilla4@gmail.com</a>
             </div>
             <div class="flex flex-col">
-                <a href="https://www.facebook.com/0100.010O/"
+                <a href="https://www.facebook.com/coders.mitch"
                     class="ms-5 hover:text-[#ED1B24] transition duration-150"><i
                         class="fa-brands fa-square-facebook"></i> Mitch Barcenilla</a>
             </div>
